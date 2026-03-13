@@ -106,18 +106,10 @@ void Computor::solveDegree1()
     double numD = -b;
     double denD =  a;
 
+    std::cout << "The solution is:" << std::endl;
     long long num = myRound(numD * 1000);
     long long den = myRound(denD * 1000);
-    long long g   = myGcd(myAbsLL(num), myAbsLL(den));
-    num /= g;
-    den /= g;
-    if (den < 0) { num = -num; den = -den; }
-
-    std::cout << "The solution is:" << std::endl;
-    if (den == 1)
-        std::cout << num << std::endl;
-    else
-        std::cout << num << "/" << den << std::endl;
+    std::cout << formatFraction(num, den) << std::endl;
 }
 
 void Computor::solveDegree2()
