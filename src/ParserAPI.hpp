@@ -1,14 +1,14 @@
 #pragma once
-
-#include <string>
-#include <map>
+#include "Lexer.hpp"
+#include "Parser.hpp"
+#include "helpers.hpp"
 
 // ─────────────────────────────────────────────────────────────────────────────
 //  PARSE RESULT
 // ─────────────────────────────────────────────────────────────────────────────
 
 struct ParseResult {
-    std::map<int, double> coeffs;   // degree -> coefficient, reduced (LHS - RHS = 0)
+    std::map<int, double> coeffs;
     int polynomial_degree;
     std::string reduced_form;
 };

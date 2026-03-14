@@ -1,13 +1,5 @@
 #include "ParserAPI.hpp"
-#include "Lexer.hpp"
-#include "Parser.hpp"
-#include <sstream>
-#include <cmath>
 
-static double myAbs(double n)
-{
-    return n < 0.0 ? -n : n;
-}
 
 static std::string buildReducedForm(const std::map<int, double>& coeffs) {
     if (coeffs.empty()) return "0 * X^0 = 0";

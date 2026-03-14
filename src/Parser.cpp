@@ -1,12 +1,5 @@
 #include "Parser.hpp"
-#include "Lexer.hpp"
-#include <stdexcept>
-#include <cmath>
 
-static double myAbs(double n)
-{
-    return n < 0.0 ? -n : n;
-}
 
 Parser::Parser(const std::vector<Token>& tokens)
     : tokens_(tokens), pos_(0) {}

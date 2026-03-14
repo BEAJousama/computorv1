@@ -10,7 +10,8 @@ SRCS     = $(SRCDIR)/main.cpp \
            $(SRCDIR)/Lexer.cpp \
            $(SRCDIR)/Parser.cpp \
            $(SRCDIR)/ParserAPI.cpp \
-           $(SRCDIR)/Computor.cpp
+           $(SRCDIR)/Computor.cpp \
+           $(SRCDIR)/helpers.cpp
 
 OBJS     = $(SRCS:$(SRCDIR)/%.cpp=$(OBJDIR)/%.o)
 

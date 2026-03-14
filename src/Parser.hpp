@@ -1,10 +1,7 @@
 #pragma once
-
-#include <string>
-#include <map>
-#include <vector>
-
 #include "Lexer.hpp"
+#include "helpers.hpp"
+#include <map>
 
 // ─────────────────────────────────────────────────────────────────────────────
 //  MONOMIAL

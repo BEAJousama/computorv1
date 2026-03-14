@@ -1,5 +1,4 @@
 #include "Lexer.hpp"
-#include <cctype>
 
 Lexer::Lexer(std::string src) : src_(std::move(src)), pos_(0) {}
 

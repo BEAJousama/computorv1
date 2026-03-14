@@ -1,11 +1,6 @@
 #pragma once
-
-#include <string>
-#include <iostream>
-#include <sstream>
-#include <iomanip>
-
 #include "ParserAPI.hpp"
+#include "helpers.hpp"
 
 // ─────────────────────────────────────────────────────────────────────────────
 //  COMPUTOR CLASS
@@ -23,11 +18,6 @@ private:
     // Display
     std::string formatReduced() const;
     int degree() const;
-
-    // Math helpers
-    static double mySqrt(double n);
-    static std::string fmtCoeff(double v);
-    static std::string formatFraction(long long num, long long den);
 
     // Solvers
     void solveDegree0();
